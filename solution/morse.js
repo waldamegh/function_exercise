@@ -66,7 +66,7 @@ let decodeAsString = function(word){
     let result = ""
 
     for(let x = 0; x < morse_array.length; x++){
-        //Object.keys(morse) -- this method uses stores all the keys
+        //Object.keys(morse) -- this method stores all the keys
         // in an array of strings
         
         //The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
