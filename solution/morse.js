@@ -27,6 +27,16 @@ var morse = {
     y: '-.--',
     z: '--..'
   }
+/*
+  Solution Array(Pseudo code)
+  ==============
+  1. Split string to make array of characters
+  2. Loop through array of characters
+  3. find key in objects and swap with key value
+  4. save each value in a string
+  5. return string
+*/
+
 //array solution
 function encodeStringAsArray(word){
     let str_split = word.split("") //split string into array of characters
@@ -44,7 +54,14 @@ function encodeStringAsArray(word){
 }
 console.log(encodeStringAsArray("hello world"))
 
-
+/*
+  Solution String(Pseudo code)
+  ==============
+  1. Make Loop based on string length
+  2. Check if character matches object key
+  3. save each value in a string
+  4. return string
+*/
 let encodeStringAsString = function(word){
     let code = "" //string method
     for(let x = 0; x < word.length; x++){
@@ -66,7 +83,7 @@ let decodeAsString = function(word){
     let result = ""
 
     for(let x = 0; x < morse_array.length; x++){
-        //Object.keys(morse) -- this method uses stores all the keys
+        //Object.keys(morse) -- this method stores all the keys
         // in an array of strings
         
         //The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
@@ -86,8 +103,14 @@ let decodeAsString = function(word){
     
 }
 
-decodeAsString("... .- -- ..- . .-..    -- --- .-. ... .    .. -. ...- . -. - . -..    -- --- .-. ... .    -.-. --- -.. .")
+console.log(decodeAsString("... .- -- ..- . .-..    -- --- .-. ... .    .. -. ...- . -. - . -..    -- --- .-. ... .    -.-. --- -.. ."))
 
-decodeAsString("-.-- --- ..- .-.    .. -. ... - .-. ..- -.-. - --- .-. ...    .-.. --- ...- .    -.-- --- ..-")
+console.log(decodeAsString("-.-- --- ..- .-.    .. -. ... - .-. ..- -.-. - --- .-. ...    .-.. --- ...- .    -.-- --- ..-"))
 
-decodeAsString("- .... .. ...    .. ...    - .... .    .- -. ... .-- . .-.    - ---    - .... .    ..- .-.. - .. -- .- - .    --.- ..- . ... - .. --- -.    --- ..-.    .-.. .. ..-. .    - .... .    ..- -. .. ...- . .-. ... .    .- -. -..    . ...- . .-. -.-- - .... .. -. --. ...")
+console.log(decodeAsString("- .... .. ...    .. ...    - .... .    .- -. ... .-- . .-.    - ---    - .... .    ..- .-.. - .. -- .- - .    --.- ..- . ... - .. --- -.    --- ..-.    .-.. .. ..-. .    - .... .    ..- -. .. ...- . .-. ... .    .- -. -..    . ...- . .-. -.-- - .... .. -. --. ..."))
+
+
+
+
+
+
