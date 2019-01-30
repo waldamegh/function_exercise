@@ -1,7 +1,8 @@
 # Morse Code
 Given the following alphabet:
 
-```{
+```
+var morse = {
   a: '.-',
   b: '-...',
   c: '-.-.',
