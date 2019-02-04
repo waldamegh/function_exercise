@@ -1,6 +1,6 @@
 const readline = require('readline-sync');
 
-function planTrip(LOn, SOn, LOff, SOff){
+function (LOn, SOn, LOff, SOff){
 
     var OnStopsList = "";
     var OffStopsList = "";
